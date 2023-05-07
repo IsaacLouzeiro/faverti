@@ -1,0 +1,18 @@
+#app {
+  font-family: "Raleway", sans-serif;
+  color: #444444;
+}
+
+a,
+.green {
+  color: #14c871;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: #206bfb;
+    text-decoration: none;
+  }
+}
