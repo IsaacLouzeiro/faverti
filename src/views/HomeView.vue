@@ -2,6 +2,7 @@
   import HeroSection from '../components/HeroSection.vue';
   import InfoSection from '../components/InfoSection.vue';
   import ServiceSection from '../components/ServiceSection.vue';
+  import ExperienceSection from '../components/ExperienceSection.vue';
 </script>
 
 <template>
@@ -9,5 +10,6 @@
   <main>
     <InfoSection />
     <ServiceSection />
+    <ExperienceSection />
   </main>
 </template>
