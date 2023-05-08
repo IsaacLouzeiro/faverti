@@ -1,11 +1,11 @@
 <script setup>
   import HeroSection from '../components/HeroSection.vue';
+  import InfoSection from '../components/InfoSection.vue';
 </script>
 
 <template>
   <HeroSection />
-
   <main>
-    <!-- <h1>aaa</h1> -->
+    <InfoSection />
   </main>
 </template>
