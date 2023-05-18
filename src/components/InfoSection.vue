@@ -21,10 +21,6 @@
       text: "A adoção de práticas sustentáveis em qualquer área de uma organização, demonstra comprometimento com causa socioambientais, o que melhora a imagem de uma empresa no mundo corporativo e com seus clientes."
     }
   ]
-
-  function focus() {
-    
-  }
 </script>
 
 <template>
@@ -40,7 +36,7 @@
                     <h3>{{ mainTitle }}</h3>
                     <p class="fst-italic"> {{ mainParagraph }} </p>
                     <ul>
-                    <li v-for="item in items" :key="item"><i class="bi bi-check-circle"></i><a href="#" @click="focus">{{ item.title }}</a></li>
+                    <li v-for="item in items" :key="item"><i class="bi bi-check-circle"></i><a href="#green-it">{{ item.title }}</a></li>
                     </ul>
                     <p>
                     {{ secondParagraph }}
