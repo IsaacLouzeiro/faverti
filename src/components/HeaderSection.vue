@@ -13,7 +13,7 @@
             <ul class="navbar-nav">
                 <li><a class="nav-link"  href="#hero">Início</a></li>
                 <li></li>
-                <li><a class="nav-link" href="#green-it">TI Verde</a></li>
+                <li><a class="nav-link" href="#info">TI Verde</a></li>
                 <li><a class="nav-link" href="#services">Serviços</a></li>
                 <li><a class="nav-link" href="#testimonials">Depoimentos</a></li>
                 <li><a class="nav-link" href="#team">Sobre Nós</a></li>

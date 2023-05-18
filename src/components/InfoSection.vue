@@ -1,33 +1,33 @@
-<template>
-    <!-- ======= Green IT Section ======= -->
-    <section id="green-it" class="green-it">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bi bi-laptop"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
-                        <h4 class="title"><a href="">Dolor Sitema</a></h4>
-                        <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                    <div class="icon-box">
-                        <div class="icon"><i class="bi bi-clipboard-data"></i></div>
-                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- End Green IT Section -->
+<script setup>
+  let mainTitle = "Quais os benefícios da T.I. Verde?"
+  let mainParagraph = "A T.I. verde pode trazer uma série de vantagens e benefícios para sua empresa, através da promoção da eficiência energética, a diminuição do uso de recursos naturais e a adesão de práticas responsáveis com o meio ambiente."
+  let secondParagraph = "Esses são alguns dos benefícios que podem ser alcançados pela implementação da T.I. verde dentro de uma organização, contribuindo para promoção da sustentabilidade e preservação do meio ambiente, diminuindo custos e aumentando a reputação de uma empresa."
 
+  let items = [
+    {
+      title: "Redução das emissões de carbono",
+      text: "Ao escolher práticas mais sustentáveis, como a virtualização, é possível reduzir a quantidade de equipamentos, resultando em menor consumo de energia e emissões de poluentes. Isso contribui para a preservação do meio ambiente e promove uma abordagem mais sustentável na área de TI."
+    },
+    {
+      title: "Redução do consumo energético",
+      text: "A TI Verde reduz o consumo de energia através da otimização dos sistemas de TI, do uso de hardware eficiente em energia e da implementação de políticas e sistemas de controle de energia e recursos. Isso inclui dispositivos que se desligam automaticamente quando não estão em uso e torneiras com sensores para economia de água, entre outras práticas."
+    },
+    {
+      title: "Redução de custos e do uso de recursos naturais",
+      text: "A implementação de práticas de reciclagem, reutilização e descarte adequados para os eletrônicos, além de práticas que reduzem a necessidades de equipamentos, economia de energia e a optimização dos recursos utilizados contribuem para a redução de custos nas áreas ligadas a T.I."
+    },
+    {
+      title: "Melhora a visão dos consumidores com a empresa",
+      text: "A adoção de práticas sustentáveis em qualquer área de uma organização, demonstra comprometimento com causa socioambientais, o que melhora a imagem de uma empresa no mundo corporativo e com seus clientes."
+    }
+  ]
+
+  function focus() {
+    
+  }
+</script>
+
+<template>
     <!-- ======= Info Section ======= -->
     <section id="info" class="info">
         <div class="container">
@@ -37,25 +37,38 @@
                     <img src="../assets/img/infoGirl.jpg" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
-                    <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-                    <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                    </p>
+                    <h3>{{ mainTitle }}</h3>
+                    <p class="fst-italic"> {{ mainParagraph }} </p>
                     <ul>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-                    <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-                    <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda</li>
+                    <li v-for="item in items" :key="item"><i class="bi bi-check-circle"></i><a href="#" @click="focus">{{ item.title }}</a></li>
                     </ul>
                     <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur.
+                    {{ secondParagraph }}
                     </p>
                 </div>
             </div>
 
         </div>
     </section><!-- End Info Section -->
+
+    <!-- ======= Green IT Section ======= -->
+    <section id="green-it" class="green-it">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div 
+                  class="col-lg-5 col-md-6" 
+                  v-for="item in items"
+                  :key="item"
+                  >
+                    <div class="icon-box">
+                        <div class="icon"><i class="bi bi-laptop"></i></div>
+                        <h4 class="title"><a href="">{{ item.title }}</a></h4>
+                        <p class="description">{{ item.text }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Green IT Section -->
 </template>
 
 <style scoped>
@@ -112,6 +125,10 @@
 /*--------------------------------------------------------------
 # info
 --------------------------------------------------------------*/
+.info {
+  padding-bottom: 0;
+}
+
 .info .content h3 {
   font-weight: 700;
   font-size: 32px;
