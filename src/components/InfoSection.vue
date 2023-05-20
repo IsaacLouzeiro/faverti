@@ -1,7 +1,7 @@
 <script setup>
-  import BenefitsItGreenSection from './BenefitsItGreenSection.vue'
-  import ContributeItGreenSection from './ContributeItGreenSection.vue'
-  import WhatIsItGreenSection from './WhatIsItGreenSection.vue'
+  import BenefitsItGreenSection from './InfoSection/BenefitsItGreenSection.vue'
+  import ContributeItGreenSection from './InfoSection/ContributeItGreenSection.vue'
+  import WhatIsItGreenSection from './InfoSection/WhatIsItGreenSection.vue'
 </script>
 
 <template>
