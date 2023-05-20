@@ -89,6 +89,11 @@
   padding: 0;
 }
 
+.contribute-green-it div>div {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
 .contribute-green-it .icon-box {
   padding: 20px;
   color: #5f687b;
