@@ -1,16 +1,22 @@
 <script setup>
   import BenefitsItGreenSection from './BenefitsItGreenSection.vue'
   import ContributeItGreenSection from './ContributeItGreenSection.vue'
+  import WhatIsItGreenSection from './WhatIsItGreenSection.vue'
 </script>
 
 <template>
     <!-- ======= Info Section ======= -->
     <section id="info" class="info">
-      <BenefitsItGreenSection />
+      <div class="section-title">
+          <span>TI Verde</span>
+          <h2>TI Verde</h2>
+      </div>
 
+      <WhatIsItGreenSection />
+      <BenefitsItGreenSection />
       <ContributeItGreenSection />
     </section><!-- End Info Section -->
-</template>
+  </template>
 
 <style scoped>
 
