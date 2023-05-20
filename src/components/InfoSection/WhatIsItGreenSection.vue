@@ -9,9 +9,9 @@
     <!-- ======= Info Section ======= -->
     <section class="info">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
               <div class="col-lg-6">
-                  <img src="../assets/img/aboutBoy.png" class="img-fluid" alt="">
+                  <img src="../../assets/img/aboutBoy.png" class="img-fluid col-10 align-self-center" alt="">
               </div>
               <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>{{ subtitle }}</h3>
