@@ -7,7 +7,7 @@
                 <h1>O TI pode ser verde</h1>
                 <h2>A interseção entre sustentabilidade e tecnologia da informação é a chave para desbloquear um futuro em que a inovação impulsiona a preservação, a eficiência energética substitui o desperdício e a transformação digital abre caminho para um mundo mais verde e sustentável.</h2>
                 <div class="d-flex">
-                    <a href="#green-it" class="btn-get-started scrollto">Saiba Mais</a>
+                    <a href="#info" class="btn-get-started scrollto">Saiba Mais</a>
                 </div>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2 hero-img">
