@@ -59,6 +59,7 @@
 
 #hero .btn-get-started:hover {
     background: #206bfb;
+    color: #fff !important;
     box-shadow: 0 8px 28px rgba(32, 107, 251, 0.45);
 }
 
