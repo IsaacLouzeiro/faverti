@@ -2,6 +2,7 @@
   import BenefitsItGreenSection from './InfoSection/BenefitsItGreenSection.vue'
   import ContributeItGreenSection from './InfoSection/ContributeItGreenSection.vue'
   import WhatIsItGreenSection from './InfoSection/WhatIsItGreenSection.vue'
+  import ImportanceItGreenSection from './InfoSection/ImportanceItGreenSection.vue'
 </script>
 
 <template>
@@ -14,6 +15,7 @@
 
       <WhatIsItGreenSection />
       <BenefitsItGreenSection />
+      <ImportanceItGreenSection />
       <ContributeItGreenSection />
     </section><!-- End Info Section -->
   </template>
