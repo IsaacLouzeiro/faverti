@@ -35,7 +35,7 @@
 
 .info .content h3 {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 1.6em;
   color: #5f687b;
 }
 
