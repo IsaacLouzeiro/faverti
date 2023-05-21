@@ -1,3 +1,40 @@
+<script setup>
+  const members = [
+    {
+      name: "Daniel Rodrigues",
+      phrase: "desenvolvimento sustentável significa prosperidade globalmente compartilhada e ambientalmente sustentável.",
+      composer: "Sachs",
+      linkedin: "https://www.linkedin.com/in/daniel-rodrigues-8b0623220/"
+    },
+    {
+      name: "Eduardo Souza",
+      phrase: "A Evolução tecnológica só fará sentido se andar de mãos dadas com a natureza.",
+      linkedin: "https://www.linkedin.com/in/eduardo-souza-1142aa226"
+    },
+    {
+      name: "Eliezer Barbosa",
+      phrase: "Um país que polui, destrói a si mesmo.",
+      linkedin: "https://www.linkedin.com/in/eliezer-barbosa-santos-3975b9274/"
+    },
+    {
+      name: "Isaac Louzeiro",
+      phrase: "Preservar a natureza é conectar-se com um futuro sustentável.",
+      linkedin: "https://www.linkedin.com/in/isaac-louzeiro/"
+    },
+    {
+      name: "Marco Antonio",
+      phrase: "Sustentabilidade é suprir as necessidades da geração presente, sem afetar a habilidade das gerações futuras de suprir as suas.",
+      composer: "Brundtland",
+      linkedin: "https://www.linkedin.com/in/marco-antonio-marques-924537277/"
+    },
+    {
+      name: "Renan Silva",
+      phrase: "Preservar o planeta é um dever de todos. Pequenas ações sustentáveis hoje geram grandes impactos positivos amanhã.",
+      linkedin: "https://www.linkedin.com/in/renan-silva-b616a9265/"
+    }
+  ]
+</script>
+
 <template>
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
@@ -5,74 +42,29 @@
         <div class="section-title">
           <span>Sobre nós</span>
           <h2>Sobre nós</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <p>Site desenvolvido para o trabalho de de Fundamentos de TI do 1º semestre de Gestão de TI da Faculdade de Tecnologia de Franco da Rocha. Abaixo estão os integrantes da equipe.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+        <div class="row  justify-content-around">
+          <div 
+            class="col-lg-4 col-md-6 d-flex align-items-center"
+            v-for="member in members"
+            :key="member"
+            >
             <div class="member">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <i class='bx bx-user-pin' ></i>
+              <h4>{{ member.name }}</h4>
               <p>
-                Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                <i data-v-47c507f7="" class="bi bi-quote"></i>
+                {{ member.phrase }}
+                <i data-v-47c507f7="" class="bi bi-quote" style="transform: rotate(180deg); display: inline-block;"></i>
+                <span v-if="member.composer">- {{ member.composer }}</span>
               </p>
               <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a :href="member.linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <h4>Sarah Jhinson</h4>
-              <span>Product Manager</span>
-              <p>
-                Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
-              <p>
-                Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-              </p>
-              <div class="social">
-                <a href=""><i class="bi bi-twitter"></i></a>
-                <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section><!-- End Team Section -->
@@ -83,10 +75,16 @@
 # Team
 --------------------------------------------------------------*/
 .team .member {
+  width: 100%;
   text-align: center;
   margin-bottom: 20px;
   padding: 30px 20px;
   background: #fff;
+}
+
+.team .member>i {
+  font-size: 2em;
+  color: #16df7e;
 }
 
 .team .member h4 {
@@ -97,7 +95,6 @@
 
 .team .member span {
   font-style: italic;
-  display: block;
   font-size: 13px;
 }
 
