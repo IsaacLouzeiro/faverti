@@ -41,7 +41,7 @@
     },
     {
       title: "Fmg Reciclagem de Lixo Eletrônico: ",
-      text: "Ccoleta de pilhas e baterias.",
+      text: "Coleta de pilhas e baterias.",
       address: "Rua Ana Sierra Diniz, 415 - Parque Monte Verde, Franco da Rocha - SP",
       phone: "(11) 96438-9780"
     },
