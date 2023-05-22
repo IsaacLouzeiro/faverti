@@ -14,7 +14,7 @@
                 <div class="row footer-newsletter justify-content-center">
                     <div class="col-lg-6">
                         <form action="" method="post">
-                            <input type="email" name="email" placeholder="Enter your Email" required><input type="submit" value="Subscribe">
+                            <input type="email" name="email" placeholder="Insira seu Email" required><input type="submit" value="Inscreva-se">
                         </form>
                     </div>
                 </div>
