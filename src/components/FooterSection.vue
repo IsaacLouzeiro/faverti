@@ -7,7 +7,7 @@
                 <div class="row  justify-content-center">
                     <div class="col-lg-6">
                         <h3>FaVerTI</h3>
-                        <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+                        <p>Receba novidades sobre atualizações relacionadas ao site e informações semanais sobre o mundo sustentável.</p>
                     </div>
                 </div>
 
