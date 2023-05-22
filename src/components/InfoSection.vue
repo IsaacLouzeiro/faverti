@@ -35,6 +35,8 @@
     }
   ]
 
+  import imgImportance from '@/assets/img/importanceGirl.png'
+
   const benefitsItGreenList = [
     {
       title: "Redução das emissões de carbono",
@@ -57,6 +59,8 @@
       icon: "bx-line-chart"
     }
   ]
+  
+  import imgBenefits from '@/assets/img/infoGirl.jpg'
 
   const contributeItGreenList = [
     {
@@ -90,6 +94,8 @@
       icon: "bx-book-reader"
     }
   ]
+
+  import imgContribute from '@/assets/img/aboutGirl.png'
 </script>
 
 <template>
@@ -105,7 +111,7 @@
 
       <!-- Importance IT Green -->
       <InfoSectionTemplate
-        img="/src/assets/img/importanceGirl.png"
+        :img="imgImportance"
         mainTitle="Qual é a importância da T.I. Verde?"
         mainParagraph="A TI Verde é importante por diversas razões: "
         secondParagraph="Em resumo, a TI Verde promove a sustentabilidade ambiental, reduz os custos operacionais, melhora a imagem corporativa, assegura a conformidade regulatória e impulsiona a inovação."
@@ -115,7 +121,7 @@
 
       <!-- Benefits IT Green -->
       <InfoSectionTemplate
-        img="/src/assets/img/infoGirl.jpg"
+        :img="imgBenefits"
         mainTitle="Quais os benefícios da T.I. Verde?"
         mainParagraph="A T.I. verde pode trazer uma série de vantagens e benefícios para sua empresa, através da promoção da eficiência energética, a diminuição do uso de recursos naturais e a adesão de práticas responsáveis com o meio ambiente."
         secondParagraph="Esses são alguns dos benefícios que podem ser alcançados pela implementação da T.I. verde dentro de uma organização, contribuindo para promoção da sustentabilidade e preservação do meio ambiente, diminuindo custos e aumentando a reputação de uma empresa."
@@ -125,7 +131,7 @@
 
       <!-- Contribute IT Green -->
       <InfoSectionTemplate
-        img="/src/assets/img/aboutGirl.png"
+        :img="imgContribute"
         mainTitle="Como contribuir com a T.I. Verde?"
         mainParagraph="Contribuir com a causa da 'T.I. Verde' envolve adotar práticas e tecnologias sustentáveis na área de Tecnologia da Informação. O objetivo é reduzir o impacto ambiental causado pelo setor, promovendo a eficiência energética, a redução de resíduos eletrônicos e a adoção de soluções mais sustentáveis. Listamos a seguir algumas práticas relacionadas à esse comportamento:"
         secondParagraph="Lembrando que essas são apenas algumas das várias maneiras de contribuir com a causa da 'T.I. Verde'. O principal é buscar constantemente soluções mais sustentáveis para minimizar o impacto ambiental da Tecnologia da Informação."
