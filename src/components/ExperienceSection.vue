@@ -12,6 +12,32 @@
 
     // Import Swiper styles
     export default {
+        data() {
+          return {
+            testimonials: [
+              {
+                name: "Bill Gates",
+                testimonial: "Devemos aproveitar o poder da tecnologia da informação para impulsionar a sustentabilidade, pois o futuro não pode ser digital sem também ser verde.",
+                business: "Magnata"
+              },
+              {
+                name: "Angelo Fígaro",
+                testimonial: "Por meio das novas tecnologias, a gente precisa ajudar o colaborador a ser mais humano e menos mecânico.",
+                business: "CIO LATAM Renault"
+              },
+              {
+                name: "Gro Harlem Brundtland",
+                testimonial: "Sustentabilidade é suprir as necessidades da geração presente, sem afetar a habilidade das gerações futuras de suprir as suas.",
+                business: "Diplomata"
+              },
+              {
+                name: "Jeffrey Sachs",
+                testimonial: "Desenvolvimento sustentável significa prosperidade globalmente compartilhada e ambientalmente sustentável.",
+                business: "Economista"
+              }
+            ]
+          }
+        },
         components: {
         Swiper,
         SwiperSlide,
@@ -40,13 +66,13 @@
             <div class="section-title">
                 <span>Depoimentos</span>
                 <h2>Depoimentos</h2>
-                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+                <p>Seja o primeiro a aparecer aqui, mande nos uma hístória &#128516;</p>
             </div>
             
             <swiper
                 :modules="modules"
                 :speed= 600
-                :loop= true
+                :loop= false
                 :autoplay="{ delay: 5000, disableOnInteraction: false }"
                 :breakpoints="{320: { slidesPerView: 1, spaceBetween: 20 }, 1200: { slidesPerView: 3, spaceBetween: 20}}"
             
@@ -55,60 +81,18 @@
                 @swiper="onSwiper"
                 @slideChange="onSlideChange"
             >
-                <swiper-slide>
+                <swiper-slide 
+                  v-for="testimonial in testimonials"
+                  :key="testimonial"
+                >
                     <div class="testimonial-item">
                         <p>
-                            <i class="bi bi-quote"></i>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                        <i class="bi bi-quote" style="transform: rotate(180deg); display: inline-block;"></i>
+                          <i class="bi bi-quote"></i>
+                          {{ testimonial.testimonial }}
+                          <i class="bi bi-quote" style="transform: rotate(180deg); display: inline-block;"></i>
                         </p>
-                        <h3>Saul Goodman</h3>
-                        <h4>Ceo &amp; Founder</h4>
-                    </div>
-                </swiper-slide><!-- End testimonial item -->
-                <swiper-slide>
-                    <div class="testimonial-item">
-                        <p>
-                            <i class="bi bi-quote"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                        <i class="bi bi-quote" style="transform: rotate(180deg); display: inline-block;"></i>
-                        </p>
-                        <h3>Sara Wilsson</h3>
-                        <h4>Designer</h4>
-                    </div>
-                </swiper-slide><!-- End testimonial item -->
-                <swiper-slide>
-                    <div class="testimonial-item">
-                        <p>
-                            <i class="bi bi-quote"></i>
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                        <i class="bi bi-quote" style="transform: rotate(180deg); display: inline-block;"></i>
-                        </p>
-                        <h3>Jena Karlis</h3>
-                        <h4>Store Owner</h4>
-                    </div>
-                </swiper-slide><!-- End testimonial item -->
-                <swiper-slide>
-                    <div class="testimonial-item">
-                        <p>
-                        <i class="bi bi-quote"></i>
-                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                        <i class="bi bi-quote" style="transform: rotate(180deg); display: inline-block;"></i>
-                        </p>
-                        <h3>Matt Brandon</h3>
-                        <h4>Freelancer</h4>
-                    </div>
-                </swiper-slide><!-- End testimonial item -->
-
-                <swiper-slide>
-                    <div class="testimonial-item">
-                        <p>
-                        <i class="bi bi-quote"></i>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                        <i class="bi bi-quote" style="transform: rotate(180deg); display: inline-block;"></i>
-                        </p>
-                        <h3>John Larson</h3>
-                        <h4>Entrepreneur</h4>
+                        <h3>{{ testimonial.name }}</h3>
+                        <h4>{{ testimonial.business }}</h4>
                     </div>
                 </swiper-slide><!-- End testimonial item -->
             </swiper>
@@ -120,8 +104,8 @@
       <div class="container">
         <div class="text-center">
           <h3>Conte sua experiência</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a class="cta-btn" href="#">Conte sua experiência</a>
+          <p>Mande uma história para nós através do Email, contando sobre uma experiência sua relacionada a TI Verde &#128516;. A história mais interessante será colocada no site &#128151;.</p>
+          <a class="cta-btn" href="mailto:faverti@gmail.com">Conte sua experiência</a>
         </div>
       </div>
     </section><!-- End Cta Section -->
@@ -243,5 +227,6 @@
 .cta .cta-btn:hover {
   background: #206bfb;
   border-color: #206bfb;
+  color: #fff!important;
 }
 </style>
