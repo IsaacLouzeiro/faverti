@@ -27,7 +27,7 @@
                 &copy; Copyright <strong><span>FaVerTI</span></strong>. Todos os Direitos Reservados
             </div>
             <div class="credits">
-                Design feito por <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>. Website criado com Vue Js por <a href="https://isaaclouzeiro.dev.br" target="_blank">Isaac Louzeiro</a>
+                Design baseado no <a href="https://bootstrapmade.com/demo/eNno/" target="_blank">BootstrapMade</a>. Website criado com Vue Js por <a href="https://isaaclouzeiro.dev.br" target="_blank">Isaac Louzeiro</a>
             </div>
         </div>
     </footer><!-- End Footer -->
