@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                <h1>O TI pode ser verde</h1>
+                <h1>A TI pode ser verde</h1>
                 <h2>A interseção entre sustentabilidade e tecnologia da informação é a chave para desbloquear um futuro em que a inovação impulsiona a preservação, a eficiência energética substitui o desperdício e a transformação digital abre caminho para um mundo mais verde e sustentável.</h2>
                 <div class="d-flex">
                     <a href="#info" class="btn-get-started scrollto">Saiba Mais</a>
