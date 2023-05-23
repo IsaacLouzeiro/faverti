@@ -42,7 +42,7 @@
         <div class="section-title">
           <span>Sobre nós</span>
           <h2>Sobre nós</h2>
-          <p>Site desenvolvido para o trabalho de de Fundamentos de TI do 1º semestre de Gestão de TI da Faculdade de Tecnologia de Franco da Rocha. Abaixo estão os integrantes da equipe.</p>
+          <p>Site desenvolvido para o trabalho de Fundamentos de TI do 1º semestre de Gestão de TI da Faculdade de Tecnologia de Franco da Rocha. Abaixo estão os integrantes da equipe.</p>
         </div>
 
         <div class="row  justify-content-around">
